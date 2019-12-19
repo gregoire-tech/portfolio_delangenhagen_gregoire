@@ -20,15 +20,37 @@
 </head>
 
 <body>
-
-<!-- -- bar de navigation ---->
 <header>
-    <nav class="nav nav-pills flex-column flex-sm-row">
-        <a class="flex-sm-fill text-sm-center nav-link active" href="#">Active</a>
-        <a class="flex-sm-fill text-sm-center nav-link" href="#">Longer nav link</a>
-        <a class="flex-sm-fill text-sm-center nav-link" href="#">Link</a>
-        <a class="flex-sm-fill text-sm-center nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+<!-- -- barre de navigation ---->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <!-- -- bouton de navigation et bouton home ---->
+    <a class="navbar-brand" href="index.htlm">Home</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+        <!-- -- bouton de navigation et bouton home f ---->
+
+    <!-- -- bouton de navigation ---->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+            <a class="nav-link" href="#">Contact <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Liens
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">A propos</a>
+            <a class="dropdown-item" href="#">Recommandation</a>
+            <a class="dropdown-item" href="#">Compétences et Formations</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Mentions légales</a>
+            </div>
+        </li>       
+    </div>
     </nav>
+<!-- -- barre de navigation f ---->
 </header>  
 
 <!-- -- block central ---->
@@ -36,24 +58,24 @@
             <!-- -- 1 images + carousel ---->
             <div class="row">
                 <!-- -- 1 images  ---->
-                <div class="col-md-6 col-12">
-                    <img src="12.jpg" class="imageResponsive" alt="...">
+                <div class="col-md-6 col-12 jpg">
+                    <img src="12.jpg" class="imageResponsive" alt="A propos">
                 </div>
                 <!-- -- carousel ---->
-                <div class="col-md-6 col-12 ">
+                <div class="col-md-6 col-12 jpg">
                     <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
                         <div class="carousel-inner">
                             <div class="carousel-item">
                                 <!-- -- image 1 carousel ---->
-                                <img src="10.jpg" class="d-block w-100" alt="...">
+                                <img src="10.jpg" class="d-block w-100" alt="Recommandation Professionnel">
                             </div>
                             <div class="carousel-item">
                                 <!-- -- image 2 carousel ---->
-                                <img src="11.jpg" class="d-block w-100" alt="...">
+                                <img src="11.jpg" class="d-block w-100" alt="Recommandation Professionnel">
                             </div>
                             <div class="carousel-item active">
                                 <!-- -- image 3 carousel ---->
-                                <img src="12.jpg" class="d-block w-100" alt="...">
+                                <img src="12.jpg" class="d-block w-100" alt="Recommandation Professionnel">
                             </div>
                         </div>
                         <!-- -- bouton carousel ---->
@@ -65,33 +87,46 @@
                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
                         <span class="sr-only">Next</span>
                         </a>
+                        <!-- -- bouton carousel f ---->
                     </div>   
                 </div>
+                <!-- -- carousel f ---->
             </div>
-          <!-- -- 3 images  ---->      
+            <!-- -- 1 images + carousel f ---->
+
+            <!-- -- 2 images + 4 icones ---->      
             <div class="row">
-              <div class="col-12 col-md">
+              <div class="col-12 col-md jpg">
                 <img src="old.jpg" class="imageResponsive" alt="...">
               </div>
-              <div class="col-12 col-md">
+              <div class="col-12 col-md jpg">
                 <img src="old.jpg" class="imageResponsive" alt="...">
               </div>
-              <div class="col-12 col-md">
-                <img src="old.jpg" class="imageResponsive" alt="...">
+              <!-- -- 4 icones ---->
+              <div class="col-12 col-md jpg">
+                <div class="container">
+                    <div class="row">
+                      <div class="col"><img src="telephone" alt="Téléphone"></div>
+                      <div class="col">col</div>
+                      <div class="w-100"></div>
+                      <div class="col">col</div>
+                      <div class="col">col</div>
+                    </div>
+                  </div>
               </div>
+              <!-- -- 4 icones f ---->
             </div>
+            <!-- -- 2 images + 4 icones f ----> 
           </div>
         </div>
 </section>   
 
-<footer>
-    position static bottom 0
-</footer>
-    
-    <!-- -- rajouter une carte  ou une video youtube utiliser iframe ---->
-   
 
-
-
-
+    <!-- Footer -->
+<footer class="page-footer font-small blue">
+    <div class="footer-copyright text-center py-3">
+      <a href=""> Mentions légales</a>
+    </div>
+  </footer>
+  <!-- Footer f -->
 </body></html>

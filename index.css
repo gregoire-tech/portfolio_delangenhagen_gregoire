@@ -1,5 +1,5 @@
-.blockcentral{padding: 0px; margin: 0px; background-color: brown;}
-.imageResponsive{  width: 100%; padding: inherit;}
-.carousel{width: 100%;}
-.col-12{padding: 0px; margin: 0px;}
-.col-md .col-md-8 .col-md-4{padding: 1em; margin}
+.blockcentral{padding: 0px; margin: 5rem; background-color: brown;}
+.imageResponsive{  width: 100%;}
+.jpg{padding: 1px;}
+.col-12{border-color: cornsilk;}
+.col-md .col-md-8 .col-md-4{border-color: cornsilk;}
