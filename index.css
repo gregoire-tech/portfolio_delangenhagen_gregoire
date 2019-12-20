@@ -5,8 +5,10 @@
 .col-md .col-md-8 .col-md-4{border-color: cornsilk;}
 .icon{padding: 0.3em;margin: 0%;}
 .container{padding: 0%;}
+h1 {text-align: center;}
+.flex {display: flex;flex-direction: column;}
 
 @media screen and (max-width: 500px) {.blockcentral{padding: 0px;  margin: 16px;}}
 
-h1 {text-align: center;}
-.flex {display: flex;flex-direction: column;}
+
+
