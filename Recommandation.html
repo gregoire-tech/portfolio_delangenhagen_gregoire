@@ -55,12 +55,16 @@
 
 <!-- -- block central ---->
 <section class="blockcentral row ">
+     <!-- -- carte nantes ---->
+    <div class="embed-responsive embed-responsive-16by9 col-md-6 ">
+        <iframe class="embed-responsive-item" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d86684.63842798982!2d-1.6300958013712554!3d47.23820066074608!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4805ee81f0a8aead%3A0x40d37521e0ded30!2sNantes!5e0!3m2!1sfr!2sfr!4v1576868564843!5m2!1sfr!2sfr" allowfullscreen></iframe>
+        </div>
     <!-- -- formulaire ---->
-    <div>
+    <div class="col-md-5 m-3">
         <form class="needs-validation" novalidate>
             <div class="form-row">
                 <!-- -- prénoms ---->
-            <div class="col-md-4 mb-3">
+            <div class="col-md-6 mb-3">
                 <label for="validationCustom01">Prénom</label>
                 <input type="text" class="form-control" id="validationCustom01" value="ex: Jean-Claude" required>
                 <div class="valid-feedback">
@@ -68,7 +72,7 @@
                 </div>
             </div>
             <!-- -- Nom ---->
-            <div class="col-md-4 mb-3">
+            <div class="col-md-6 mb-3">
                 <label for="validationCustom02">Nom</label>
                 <input type="text" class="form-control" id="validationCustom02" value="ex: Convenant" required>
                 <div class="valid-feedback">
@@ -79,13 +83,13 @@
             <div class="col-md-6 mb-3">
                 <div class="form-group">
                     <label for="inputEmail4">Email</label>
-                    <input type="email" class="form-control" id="inputEmail4">
+                    <input type="email" class="form-control" value="exemple@gmail.com" id="inputEmail4">
                   </div>
             </div>
             <!-- -- entreprise ---->
-            <div class="col-md-4 mb-3">
+            <div class="col-md-6 mb-3">
                 <label for="validationCustom02">Entreprise</label>
-                <input  class="form-control" id="validationCustom02" value="ex: Convenant" required>
+                <input  class="form-control" id="validationCustom02" value="ex: Hanuman Travel" required>
                 <div class="valid-feedback">
                 Looks good!
                 </div>
@@ -93,7 +97,7 @@
             <!-- -- adresse ---->
             </div>
             <div class="form-row">
-            <div class="col-md-6 mb-3">
+            <div class="col-md-12 mb-3">
                 <label for="validationCustom03">Adresse entreprise</label>
                 <input class="form-control" id="validationCustom03" required>
                 <div class="invalid-feedback">
@@ -101,26 +105,26 @@
                 </div>
             <!-- -- Commentaire ---->
             </div>
-            <div class="form-column">
+            
             <div class="col-md-12 mb-3">
                 <label for="exampleFormControlTextarea1">Commentaires</label>
                 <textarea type="text" class="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>
             </div>
-            </div>
-            
+           
+             <!-- -- bouton ---->
             </div>
             <div class="form-group">
             <div class="form-check">
                 <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
                 <label class="form-check-label" for="invalidCheck">
-                Agree to terms and conditions
+                J'ai lu et j'accepte les termes et conditions des<a href="Mentions_legales.html"> Mentions légales.</a>
                 </label>
                 <div class="invalid-feedback">
                 You must agree before submitting.
                 </div>
             </div>
             </div>
-            <button class="btn btn-primary" type="submit">Submit form</button>
+            <button class="btn btn-primary" type="submit">Envoyer</button>
         </form>
     </div>
       
