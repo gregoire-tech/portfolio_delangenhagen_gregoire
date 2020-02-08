@@ -1,0 +1,68 @@
+.blockcentral{padding: 0rem;  margin: 5rem;}
+.icon{width: 75px; padding: 0em;margin: 0rem;}
+.textlogo{display: flex;}
+.icontop{margin-bottom: 2rem;}
+.iconbottom{margin-top: 0rem;}
+.containerLogo{padding:0rem; margin:0rem;}
+h1 {text-align: center;}
+.flex {display: flex;flex-direction: column;}
+.index{z-index: 3;}
+.navbar{padding: 0%;}
+.navbar-brand{margin-right: 3rem;}
+.contactR{margin-right:1rem;}
+.skill-content {
+    position: absolute;
+    top: 5rem;
+    left:auto;
+    text-align: center;
+    z-index: 2;
+    color: white;
+    text-shadow: 0 1px 2px rgba(0,0,0,.6);
+  }
+.text-carousel {
+    position: absolute;
+    top: 0%;
+    padding: 3em;
+    left:0%;
+    text-align: center;
+    vertical-align: middle;
+    z-index: 2;
+    color: white;
+    text-shadow: 0 1px 2px rgba(0,0,0,.6);
+  }
+#Apropos{
+    position: absolute;
+    bottom: 15%;
+    left:5%;
+    text-align: center;
+    z-index: 2;
+    color: white;
+    text-shadow: 0 1px 2px rgba(0,0,0,.6);
+}
+#CV{
+    position: absolute;
+    top: 0%;
+    padding:0.7em ;
+    left:5%;
+    text-align: center;
+    font-size: 6em;
+    z-index: 2;
+    color: rgb(255, 255, 255);
+    text-shadow: 0 1px 2px rgba(0,0,0,.6);
+}
+
+.forofor {
+  display: block;
+  margin: auto;
+ }
+
+
+@media screen and (max-width: 500px) {.navbar-brand{margin-right: 0%;}
+  .blockcentral{padding: 0px;  margin: 0px;}
+}
+@media screen and (max-width: 767.98px) { .navbar-brand{margin-right: 15%;}
+.blockcentral{padding: 0px;  margin: 16px;}
+}
+@media screen and (min-width: 767.98px) {
+
+}
