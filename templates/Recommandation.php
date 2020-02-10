@@ -115,7 +115,7 @@
                 J'ai lu et j'accepte les termes et conditions des<a href="Mentions_legales.php"> Mentions légales.</a>
                 </label>
                 <div class="invalid-feedback">
-                Vous devez accepter les termes et conditions des<a href="Mentions_legales.php"> Mentions légales avant de continuer!
+                Vous devez accepter les termes et conditions des<a href="Mentions_legales.php"> Mentions légales</a> avant de continuer!
                 </div>
             </div>
             

@@ -1,68 +1,157 @@
-.blockcentral{padding: 0rem;  margin: 5rem;}
+/* COMMUN!!! */
+body{font-family: 'Montserrat', sans-serif;
+  padding-top: 3%;
+}
+.blockcentral{padding: 0rem; margin: 5rem;}
 .icon{width: 75px; padding: 0em;margin: 0rem;}
-.textlogo{display: flex;}
-.icontop{margin-bottom: 2rem;}
-.iconbottom{margin-top: 0rem;}
-.containerLogo{padding:0rem; margin:0rem;}
-h1 {text-align: center;}
-.flex {display: flex;flex-direction: column;}
-.index{z-index: 3;}
-.navbar{padding: 0%;}
-.navbar-brand{margin-right: 3rem;}
-.contactR{margin-right:1rem;}
-.skill-content {
-    position: absolute;
-    top: 5rem;
-    left:auto;
-    text-align: center;
-    z-index: 2;
-    color: white;
-    text-shadow: 0 1px 2px rgba(0,0,0,.6);
+ h1 {text-align: center;}
+ h1,h2,h3,h4{/*font-family: 'Merriweather', serif;*/
+  font-family: 'Philosopher', sans-serif;
+  /*font-family: 'Noticia Text', serif;
+  font-family: 'Playfair Display', serif;
+  font-family: 'Noto Serif', serif;
+  font-family: 'IBM Plex Sans', sans-serif;*/}
+  /* navbar (top.php) */
+  .textlogo {display: flex;
+    text-shadow: 1px 5px 5px rgba(0, 0, 0, 0.774);}
+  .navbar{padding: 0%;}
+  .navbar-brand{margin-right: 24px;}
+  .contactR{margin-right:1rem;}
+
+.icon:hover{opacity: 0.8;}
+/* PAGE home */
+  /* carousel */
+  .index{z-index: 200;}
+  .carousel-caption{position: absolute;
+    top: -10%;
+    left: 0;
+    right: 0;
   }
-.text-carousel {
-    position: absolute;
-    top: 0%;
-    padding: 3em;
-    left:0%;
-    text-align: center;
-    vertical-align: middle;
-    z-index: 2;
-    color: white;
-    text-shadow: 0 1px 2px rgba(0,0,0,.6);
-  }
-#Apropos{
+  .text-carousel {
+      display:table-cell;
+      height: 100%;
+      text-align: center;
+      z-index: 2;
+      color: rgb(255, 255, 255);
+      text-shadow: 1px 5px 5px rgba(0, 0, 0, 0.774);
+      vertical-align: middle;
+    }
+  /* texte image a propos+ cv+ skill  */
+  .text-content {
     position: absolute;
     bottom: 15%;
-    left:5%;
+    left: 5%;
     text-align: center;
-    z-index: 2;
-    color: white;
-    text-shadow: 0 1px 2px rgba(0,0,0,.6);
-}
-#CV{
-    position: absolute;
-    top: 0%;
-    padding:0.7em ;
-    left:5%;
-    text-align: center;
-    font-size: 6em;
     z-index: 2;
     color: rgb(255, 255, 255);
-    text-shadow: 0 1px 2px rgba(0,0,0,.6);
-}
+    text-shadow: 1px 5px 5px rgba(0, 0, 0, 0.774);
+  }
+    /* 4 icones */
+    .containerLogo{padding:0rem; margin:0rem;}
+    .icontop{margin-bottom: 2rem;}
+    .iconbottom{margin-top: 0rem;}
+    .bac{background-color: rgb(167, 167, 167); border-radius:1.2rem ;}
 
+
+/* PAGE 404 */
 .forofor {
   display: block;
   margin: auto;
  }
 
 
-@media screen and (max-width: 500px) {.navbar-brand{margin-right: 0%;}
+
+
+ /* Responsive */
+ /* iphone */
+@media screen and (max-width: 500px) {
+  .navbar-brand{margin-right: 0%;}
   .blockcentral{padding: 0px;  margin: 0px;}
 }
-@media screen and (max-width: 767.98px) { .navbar-brand{margin-right: 15%;}
-.blockcentral{padding: 0px;  margin: 16px;}
+/* ipad */
+
+@media screen and (max-width: 767.98px) { 
+  .navbar-brand{margin-right: 15%;}
+  .blockcentral{padding: 0px;  margin: 16px;}
+  .text-content {
+    position: absolute;
+    top: 70%;
+    left:5%;
+    text-align: center;
+    z-index: 2;
+    color: rgb(255, 255, 255);
+    text-shadow: 1 5px 5px rgba(0,0,0,.6);
+  }
+  .carousel-caption{
+    position: absolute;
+    padding: 1rem;
+    top: 5%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
 }
+/* ipad */
 @media screen and (min-width: 767.98px) {
+  .carousel-caption{
+    position: absolute;
+    padding: 3rem;
+    top: -15%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+  .text-content {
+    position: absolute;
+    top: 60%;
+    left:5%;
+    text-align: center;
+    z-index: 2;
+    color: rgb(255, 255, 255);
+    text-shadow: 1 5px 5px rgba(0,0,0,.6);
+  }
+}
+/* laptop */
+@media screen and (min-width: 850px) {
+  .carousel-caption{
+  top: 0%;
+}
+  .text-content {
+    top: 77%;
+  }
+}
+@media screen and (min-width: 850px) {
+  .carousel-caption{
+  top: 20%;
+}
+}
+@media screen and (min-width: 1250px) {
+  .carousel-caption{
+  top: 30%;
 
 }
+}
+jour1
+
+texte a propos a completer
+
+revenir accueil aprés formulaire
+enlver vardump en cas erreur
+
+ajouter une page en attente pour les projets 
+
+
+demande de domaine et hebergement!!!
+
+mettre en ligne 
+
+doc technique a remplir :
+excel tout les jours 
+remplir la doc wireframe iphone
+
+faire des commits
+
+
+
+
+

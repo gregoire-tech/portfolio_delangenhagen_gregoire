@@ -9,8 +9,8 @@ for ($i=0; $i < 3 ; $i++) {
         echo '<div class="carousel-item '.$active.' ">';
             // affiche l'image mis dans la base de donnée a lintérieur du carousel //
                 echo '<a href="index.php?page=recommandation"><img src="'.$users[$i]['image'].'" class="d-block w-100" alt="Recommandation Professionnel">
-                <div class="text-carousel ">
-                    <div class="overflow-auto">';
+                <div class="carousel-caption d-table">
+                    <div class="text-carousel">';
                         // affiche le dernier commentaire mis dans la base de donnée a lintérieur de l'image //                                                                                                      
                         echo '<h4>'.$users[$i]['entreprise'].', '.$users[$i]['localisation'].'</h4>';
                         echo '<p>'.$users[$i]['comment'].'<br> '.$users[$i]['fonction'].', '.'<em><i>'.$users[$i]['firstname'].' '.$users[$i]['lastname'].'</i></em>';

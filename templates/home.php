@@ -5,7 +5,7 @@
     //ma requête sql pour récupérer les commentaires
     $sql = "SELECT * 
             FROM users 
-            order by date_created asc";
+            order by date_created desc";
 
     //envoie ma requête SQL au serveur MySQL
     $stmt = $pdo->prepare($sql);
@@ -35,7 +35,7 @@
                 <!-- -- A propos  ---->
                 <div class="col-md-6 col-12 p-1">
                   <a href="index.php?page=a_propos"><img src="img/12.jpg" class="w-100" alt="A propos">
-                    <div id="Apropos">
+                    <div class="text-content">
                         <h2 >A propos</h2>
                     </div>
                   </a>
@@ -68,28 +68,29 @@
               <!-- --  Compétence ---->  
               <div class="col-12 col-md p-1">
                 <a href="index.php?page=competence"><img src="img/skill.jpg" class="w-100" alt="Compétence">
-                <div class="skill-content">
-                    <h2 class="text-center">SKILL and TRAINING</h2>
+                <div class="text-content">
+                    <h2>Skill & Training</h2>
                 </div></a>
               </div>
 
               <!-- -- CV ----> 
               <div class="col-12 col-md p-1">
-                <a href="CV.pdf"><img src="img/CV.jpg" class="w-100" alt="CV">
-                <div id="CV">
-                    <p class="text-center">CV</p>
-                </div></a>
+                <a href="CV.pdf" target="_blank"><img src="img/CV.jpg" class="w-100" alt="CV">
+                  <div class="text-content" >
+                      <h2>Curriculum Vitae</h2>
+                  </div>
+                </a>
               </div>
 
               <!-- -- 4 icones ---->
               <div class="col-12 col-md p-1">
                 <div class="containerLogo">
-                    <div class="row">
-                      <div class="col icontop"><a href="tel:+33613624726"><img src="img/telephone.png" class="w-100 icon " alt="Téléphone"></a></div>
+                    <div class="row ">
+                      <div class="col icontop"><a href="tel:+33613624726"><img src="img/telephone.png" class="w-100 icon bac " alt="Téléphone"></a></div>
                       <div class="col icontop"><a href="https://www.facebook.com/gregoire.degaine"><img src="img/facebook.png" class="w-100 icon" alt="Facebook"></a></div>
                       <div class="w-100"></div>
                       <div class="col iconbottom"><a href="https://www.linkedin.com/in/gr%C3%A9goire-de-langenhagen-394348197/"><img src="img/linkedin.png" class="w-100 icon " alt="Linkedin"></a></div>
-                      <div class="col iconbottom"><a href="mailto:greg_degaine@hotmail.fr"><img src="img/mail.png" class="w-100 icon " alt="Email"></a></div>
+                      <div class="col iconbottom"><a href="mailto:greg_degaine@hotmail.fr"><img src="img/mail.png" class="w-100 icon bac " alt="Email"></a></div>
                     </div>
                   </div>
               </div>
