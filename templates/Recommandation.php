@@ -40,7 +40,9 @@
             <!-- -- prénoms ---->
             <div class="col-md-6 mb-3">
                 <label for="firstname">Prénom</label>
-                <input type="text" class="form-control" id="firstname " name="firstname" placeholder="ex: Grégoire" value="" required>
+                <input type="text" class="form-control" id="firstname " name="firstname" placeholder="ex: Grégoire" required value="<?php if(!empty($_POST['firstname'])){
+                                        echo $_POST['firstname'];
+                                        } ?>">
                 <div class="invalid-feedback">
                 Ajoutez un prénom valide!
                 </div>
@@ -48,7 +50,9 @@
             <!-- -- Nom ---->
             <div class="col-md-6 mb-3">
                 <label for="lastname">Nom</label>
-                <input type="text" class="form-control" id="lastname" name="lastname" placeholder="ex: De langenhagen" value="" required>
+                <input type="text" class="form-control" id="lastname" name="lastname" placeholder="ex: De langenhagen" required value="<?php if(!empty($_POST['lastname'])){
+                                        echo $_POST['lastname'];
+                                        } ?>">
                 <div class="invalid-feedback">
                 Ajoutez un nom valide!
                 </div>
@@ -56,7 +60,9 @@
             <!-- -- fonction ---->
             <div class="col-md-12 mb-3">
                 <label for="Fonction">Fonction</label>
-                <input type="text" class="form-control" id="fonction" name="fonction" placeholder="ex: Développeur" value="" required>
+                <input type="text" class="form-control" id="fonction" name="fonction" placeholder="ex: Développeur" required value="<?php if(!empty($_POST['fonction'])){
+                                        echo $_POST['fonction'];
+                                        } ?>">
                 <div class="invalid-feedback">
                 Ajoutez une fonction valide!
                 </div>
@@ -64,7 +70,9 @@
             <!-- -- adresse mail ---->
             <div class="col-md-6 mb-3">
                 <label for="email">Email</label>
-                <input type="email" class="form-control" id="email" name="email" placeholder="exemple@gmail.com" value="" required>
+                <input type="email" class="form-control" id="email" name="email" placeholder="exemple@gmail.com" required value="<?php if(!empty($_POST['email'])){
+                                        echo $_POST['email'];
+                                        } ?>">
                 <div class="invalid-feedback">
                 Ajoutez un email valide!
                 </div>
@@ -72,7 +80,9 @@
             <!-- -- entreprise ---->
             <div class="col-md-6 mb-3">
                 <label for="enterprise">Entreprise</label>
-                <input  type="text" class="form-control"  id="enterprise" name="entreprise" placeholder="ex: Space X" value="" required>
+                <input  type="text" class="form-control"  id="enterprise" name="entreprise" placeholder="ex: Space X" required value="<?php if(!empty($_POST['enterprise'])){
+                                        echo $_POST['enterprise'];
+                                        } ?>">
                 <div class="invalid-feedback">
                 Ajoutez une entreprise valide!
                 </div>
@@ -81,7 +91,9 @@
             <div class="form-row">
             <div class="col-md-12 mb-3">
                 <label for="localisation">Adresse entreprise</label>
-                <input type="text" class="form-control" id="localisation" name="localisation"  placeholder="ex: Phnom Penh, Cambodge" value="" required>
+                <input type="text" class="form-control" id="localisation" name="localisation"  placeholder="ex: Phnom Penh, Cambodge" required value="<?php if(!empty($_POST['localisation'])){
+                                        echo $_POST['localisation'];
+                                        } ?>">
                 <div class="invalid-feedback">
                 Ajoutez une localisation valide!
                 </div>
@@ -90,7 +102,7 @@
             <div class="form-row">
             <div class="col-md-12 mb-3">
                 <label>Fichier</label>
-                <input type="file" class="form-control" id="image" name="image"  placeholder="ex: Phnom Penh, Cambodge" value="" required>
+                <input type="file" class="form-control" id="image" name="image"  placeholder="ex: Phnom Penh, Cambodge" required >
                 <div class="invalid-feedback">
                 Ajoutez une image valide!
                 </div>
@@ -98,11 +110,14 @@
             <!-- -- Commentaire ---->
             <div class="col-md-12 mb-3">
                 <label for="comment">Commentaires</label>
-                <textarea type="text" class="form-control" id="comment" name="comment"  placeholder="ex: Le ciel nocturne dévoile la voie lactée..." rows="5" value="" required></textarea>
+                <textarea type="text" class="form-control" id="comment" name="comment"  placeholder="ex: Le ciel nocturne dévoile la voie lactée..." rows="5" required value="<?php if(!empty($_POST['comment'])){
+                                        echo $_POST['comment'];
+                                        } ?>"></textarea>
                 <div class="invalid-feedback">
                 Ajoutez un commentaire valide!
                 </div>
             </div>
+            
 
             <!-- appelle la méthode pour afficher le champ caché -->
             <?php $csrfDefender->showCsrfTokenField() ?>
@@ -117,7 +132,9 @@
                 <div class="invalid-feedback">
                 Vous devez accepter les termes et conditions des<a href="Mentions_legales.php"> Mentions légales</a> avant de continuer!
                 </div>
-            </div>
+                <div class="g-recaptcha" data-sitekey="6LdmRNgUAAAAAPTLmleVGMXGkhwW_ZHCZSOqIlKA"></div>
+            
+
             
             <?php 
         //affiche les éventuelles erreurs de validations si la personne désactive son js
@@ -125,7 +142,10 @@
             foreach ($errors as $error) {
                 echo '<div>' . $error . '</div>'    ;
             }
+
         }   
+       
+       
         ?>
 
             </div> <br>

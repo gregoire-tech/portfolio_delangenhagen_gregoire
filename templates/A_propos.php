@@ -9,14 +9,18 @@
         <!-- -- article a propos ---->
         <div class="col-md-8 col-12 pr-5 order-2 order-md-1">
             <article><h2>Grégoire De langenhagen, 26 ans.</h2>
-            <p >Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                 Fuga eligendi debitis doloremque maxime, laboriosam sit ratione nihil nesciunt repudiandae quod autem praesentium sunt dolorum soluta.
-                  Debitis dolores recusandae numquam sapiente. Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias vel sint quia modi eius non?
-                   Fuga ducimus rerum modi ad praesentium ut neque placeat voluptates, sapiente dolorum ipsum illo? Cupiditate.
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia quis nulla atque corrupti dignissimos culpa eligendi alias molestiae amet veniam optio adipisci autem consequatur,
-                 veritatis temporibus accusamus minus ad repellendus?
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore reprehenderit, minima suscipit praesentium veritatis deserunt unde nihil optio esse excepturi accusantium voluptatem corporis iste modi, 
-                delectus ab aliquid ex hic.</p>
+
+            <p>Après avoir obtenu un BEP en mécanique de précision qui me semblait devoir m’emmener dans une filière dans laquelle
+                 je ne pouvais pas m’épanouir, j’ai opté pour un parcours plus général technologique. </p>
+
+            <p>Je sentais néanmoins que ces études me mèneraient dans une impasse. J’ai donc préféré travailler en
+                 intérim dans différents domaines (Funéraire, Société d’autoroute, hippodrome, BTP). </p> 
+
+            <p>Rêvant de partir à l’étranger l’occasion m’en fut offerte en 2018. Après un court séjour en Malaisie je me 
+                suis installé au Cambodge pour une durée - trop courte - de 7 mois pendant laquelle j’ai travaillé comme agent de voyage.</p>
+
+            <p> J’ai ensuite poursuivi mon périple en Asie du Sud-Est avant de rentrer en France, avec pour
+            objectif de reprendre des études dans l’idée de repartir travailler un jour à l’étranger.</p>
             </article>
         </div>
         <!---- image perso ---->

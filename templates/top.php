@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     
     <title>Portfolio Grégoire</title>
+    <link rel="icon" type="image/png" href="img/logo2.png" />
     <!-- -- ajuster a la taille d'ecran ---->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- -- bootstrap jquerry ---->
@@ -24,6 +25,12 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
     <!-- -- relier doc html+css ---->
     <link rel="stylesheet" media="screen" href="templates/index.css">
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+     <script>
+       function onSubmit(token) {
+         document.getElementById("demo-form").submit();
+       }
+     </script>
 </head>
 
 <body>

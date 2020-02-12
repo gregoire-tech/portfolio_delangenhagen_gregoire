@@ -86,11 +86,11 @@
               <div class="col-12 col-md p-1">
                 <div class="containerLogo">
                     <div class="row ">
-                      <div class="col icontop"><a href="tel:+33613624726"><img src="img/telephone.png" class="w-100 icon bac " alt="Téléphone"></a></div>
+                      <div class="col icontop"><a href="tel:+33613624726"><img src="img/telephone.png" class="w-100 icon" alt="Téléphone"></a></div>
                       <div class="col icontop"><a href="https://www.facebook.com/gregoire.degaine"><img src="img/facebook.png" class="w-100 icon" alt="Facebook"></a></div>
                       <div class="w-100"></div>
                       <div class="col iconbottom"><a href="https://www.linkedin.com/in/gr%C3%A9goire-de-langenhagen-394348197/"><img src="img/linkedin.png" class="w-100 icon " alt="Linkedin"></a></div>
-                      <div class="col iconbottom"><a href="mailto:greg_degaine@hotmail.fr"><img src="img/mail.png" class="w-100 icon bac " alt="Email"></a></div>
+                      <div class="col iconbottom"><a href="mailto:greg_degaine@hotmail.fr"><img src="img/mail.png" class="w-100 icon" alt="Email"></a></div>
                     </div>
                   </div>
               </div>
