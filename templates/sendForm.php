@@ -100,12 +100,7 @@
         $errors[] = "Votre commentaire est trop long !";
     }
 
-    //affiche les éventuelles erreurs de validations
-    if (!empty($errors)) {
-        foreach ($errors as $error) {
-            echo '<div>' . $error . '</div>'    ;
-        }
-    }
+    
     //si le formulaire est toujours valide... 
     if (empty($errors)) {
     //on écrit tout d'abord notre requête SQL, dans une variable

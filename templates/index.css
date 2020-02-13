@@ -23,12 +23,14 @@ body{font-family: 'Montserrat', sans-serif;
   /* carousel */
   .index{z-index: 200;}
   .carousel-caption{position: absolute;
-    top: -10%;
+    top: 0;
     left: 0;
     right: 0;
   }
   .text-carousel {
-      display:table-cell;
+    position: absolute;
+    top: 50%;
+    width: 100%;
       height: 100%;
       text-align: center;
       z-index: 2;
@@ -60,83 +62,37 @@ body{font-family: 'Montserrat', sans-serif;
 
 
  /* Responsive */
- /* iphone */
-@media screen and (max-width: 500px) {
+ /* iphone 5*/
+@media screen and (max-width: 340px) {.text-carousel{top: 15% ;}}
+
+/* iphone 6/7/8/X */
+@media screen and (max-width: 450px) {
   .navbar-brand{margin-right: 0%;}
   .blockcentral{padding: 0px;  margin: 0px;}
+  .text-carousel{top: 25% ;}
 }
 /* ipad */
 
-@media screen and (max-width: 767.98px) { 
+@media screen and (max-width: 790px) { 
   .navbar-brand{margin-right: 15%;}
   .blockcentral{padding: 0px;  margin: 16px;}
-  .text-content {
-    position: absolute;
-    top: 70%;
-    left:5%;
-    text-align: center;
-    z-index: 2;
-    color: rgb(255, 255, 255);
-    text-shadow: 1 5px 5px rgba(0,0,0,.6);
-  }
-  .carousel-caption{
-    position: absolute;
-    padding: 1rem;
-    top: 5%;
-    left: 0;
-    right: 0;
-    bottom: 0;
-  }
+  .text-carousel{top: 20%;}
 }
 /* ipad */
-@media screen and (min-width: 767.98px) {
-  .carousel-caption{
-    position: absolute;
-    padding: 3rem;
-    top: -15%;
-    left: 0;
-    right: 0;
-    bottom: 0;
-  }
-  .text-content {
-    position: absolute;
-    top: 60%;
-    left:5%;
-    text-align: center;
-    z-index: 2;
-    color: rgb(255, 255, 255);
-    text-shadow: 1 5px 5px rgba(0,0,0,.6);
-  }
+@media screen and (min-width: 790px) {
+  .text-carousel{top: 35%}
 }
-/* laptop */
-@media screen and (min-width: 850px) {
-  .carousel-caption{
-  top: 0%;
-}
-  .text-content {
-    top: 77%;
-  }
-}
-@media screen and (min-width: 850px) {
-  .carousel-caption{
-  top: 20%;
-}
-}
-@media screen and (min-width: 1250px) {
-  .carousel-caption{
-  top: 30%;
 
+@media screen and (min-height: 790px) {
+  .text-carousel{top: 35%}
 }
-}
-jour1
-
-revenir accueil aprés formulaire
 enlver vardump en cas erreur
+ajuster pour chaque telephone le carousel
 
 ajouter une page en attente pour les projets
 
 mettre en ligne 
-captcha
+
 mettre a jour 
 
 doc technique a remplir :

@@ -5,17 +5,7 @@
     //crée une instance de la classe
     $csrfDefender = new CsrfDefender();
 
-    //si le formulaire est soumis
-    if (!empty($_POST)){
-
-        //s'assurer que le formulaire est protégé contre les CSRF
-        if ($csrfDefender->validateReceivedToken() === true){
-            echo "valide !";
-        }
-        else {
-            echo "invalide !";
-        }
-    }
+    
 ?>
 
 <!-- --prepare et verifie le formulaire  ---->
@@ -132,25 +122,47 @@
                 <div class="invalid-feedback">
                 Vous devez accepter les termes et conditions des<a href="Mentions_legales.php"> Mentions légales</a> avant de continuer!
                 </div>
-                <div class="g-recaptcha" data-sitekey="6LdmRNgUAAAAAPTLmleVGMXGkhwW_ZHCZSOqIlKA"></div>
             
+                <?php 
+                    //affiche les éventuelles erreurs de validations
+                    if (!empty($errors)) {
+                        echo '<div class="alert alert-danger">';
+                        foreach ($errors as $error) {
+                            echo '<div>' . $error . '</div>'    ;
+                        }
+                        echo '</div>';
+                    }
 
-            
-            <?php 
-        //affiche les éventuelles erreurs de validations si la personne désactive son js
-        if (!empty($errors)) {
-            foreach ($errors as $error) {
-                echo '<div>' . $error . '</div>'    ;
-            }
+                    if (!empty($_POST)){
+                        if (empty($errors)){
+                        echo '<div class="alert alert-success">';
+                        echo '<div>' . "Votre formulaire à bien été envoyé" . '</div>' ;
+                        echo '</div>';
+                        }
+                    }
+                    //si le formulaire est soumis
+                    if (!empty($_POST)){
 
-        }   
-       
-       
-        ?>
+                        //s'assurer que le formulaire est protégé contre les CSRF
+                        if ($csrfDefender->validateReceivedToken() === true){
+                            echo '<div class="alert alert-success">';
+                        echo '<div>' . "Votre Token est valide" . '</div>' ;
+                        echo '</div>';
+                        }
+                        else {
+                            echo '<div class="alert alert-danger">';
+                            echo '<div>' . "Votre Token est invalide" . '</div>' ;
+                            echo '</div>';
+                        }
+                    }
+                    ?>
 
-            </div> <br>
+            </div> 
+            <div class="g-recaptcha" data-sitekey="6LdmRNgUAAAAAPTLmleVGMXGkhwW_ZHCZSOqIlKA"></div>
+            <br>
             <button class="btn btn-primary" type="submit">Envoyer</button>
         </form>
+
     </div>
       
       <script>
