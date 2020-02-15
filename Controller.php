@@ -33,4 +33,5 @@ class Controller
     {
         include("templates/404.php");
     }
+    
 }

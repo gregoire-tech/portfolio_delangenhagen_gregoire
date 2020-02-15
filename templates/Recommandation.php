@@ -5,6 +5,18 @@
     //crée une instance de la classe
     $csrfDefender = new CsrfDefender();
 
+     // Load Composer's autoloader
+     require 'vendor/autoload.php';
+
+     //si le formulaire est soumis
+     if (!empty($_POST)){
+         $name = $_POST['lastname'];
+         $emailp = $_POST['email'];
+         $commentp = $_POST['comment'];
+
+         $mailer = new Mailer();
+         $mailer->alertForm($name, $emailp, $commentp);
+     }
     
 ?>
 
