@@ -3,10 +3,11 @@
     spl_autoload_register();
 
     //crée une instance de la classe
-    $csrfDefender = new CsrfDefender();
+    //$csrfDefender = new CsrfDefender();
 
      // Load Composer's autoloader
      require 'vendor/autoload.php';
+ 
 
      //si le formulaire est soumis
      if (!empty($_POST)){
@@ -100,15 +101,6 @@
                 Ajoutez une localisation valide!
                 </div>
             </div>
-            <!--upload fichier en attente
-            <div class="form-row">
-            <div class="col-md-12 mb-3">
-                <label>Fichier</label>
-                <input type="file" class="form-control" id="image" name="image"  placeholder="ex: Phnom Penh, Cambodge" required >
-                <div class="invalid-feedback">
-                Ajoutez une image valide!
-                </div>
-            </div>--->
             <!-- -- Commentaire ---->
             <div class="col-md-12 mb-3">
                 <label for="comment">Commentaires</label>
@@ -122,7 +114,7 @@
             
 
             <!-- appelle la méthode pour afficher le champ caché -->
-            <?php $csrfDefender->showCsrfTokenField() ?>
+            <?php //$csrfDefender->showCsrfTokenField() ?>
 
              <!-- -- bouton ---->
             <div class="form-group">
@@ -146,31 +138,26 @@
                     }
 
                     if (!empty($_POST)){
-                        if (empty($errors)){
-                        echo '<div class="alert alert-success">';
-                        echo '<div>' . "Votre formulaire à bien été envoyé" . '</div>' ;
-                        echo '</div>';
-                        }
+                       if (empty($errors)){
+                       echo '<div class="alert alert-success">';
+                       echo '<div>' . "Votre formulaire à bien été envoyé" . '</div>' ;
+                       echo '</div>';
+                       }
                     }
                     //si le formulaire est soumis
-                    if (!empty($_POST)){
+                  //  if (!empty($_POST)){
 
-                        //s'assurer que le formulaire est protégé contre les CSRF
-                        if ($csrfDefender->validateReceivedToken() === true){
-                            echo '<div class="alert alert-success">';
-                        echo '<div>' . "Votre Token est valide" . '</div>' ;
-                        echo '</div>';
-                        }
-                        else {
-                            echo '<div class="alert alert-danger">';
-                            echo '<div>' . "Votre Token est invalide" . '</div>' ;
-                            echo '</div>';
-                        }
-                    }
+                    //    //s'assurer que le formulaire est protégé contre les CSRF
+                     //   if ($csrfDefender->validateReceivedToken() === true){
+                     //       echo '<div class="alert alert-success">';
+                      //  echo '<div>' . "Votre Token est valide" . '</div>' ;
+                      //  echo '</div>';
+                      //  }
+                  //  }
                     ?>
 
             </div> 
-            <div class="g-recaptcha" data-sitekey="6LdmRNgUAAAAAPTLmleVGMXGkhwW_ZHCZSOqIlKA"></div>
+            <!--<div class="g-recaptcha" data-sitekey="6LdmRNgUAAAAAPTLmleVGMXGkhwW_ZHCZSOqIlKA"></div>-->
             <br>
             <button class="btn btn-primary" type="submit">Envoyer</button>
         </form>

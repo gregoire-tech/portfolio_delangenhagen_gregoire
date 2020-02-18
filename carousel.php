@@ -5,7 +5,7 @@
             <a href="index.php?page=recommandation"><img src="img/4.jpg" class="d-block w-100" alt="Recommandation Professionnel">
             <div class="carousel-caption">
                 <div class="text-carousel">                                                                                                      
-                    <h1 id="fontReco">Postez vos recommandation en cliquant ici!</h1>
+                    <h1 id="fontReco">Postez vos recommandations en cliquant ici!</h1>
                 </div>
             </div> 
             </a>

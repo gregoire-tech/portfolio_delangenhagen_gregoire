@@ -16,12 +16,12 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 
     <!-- -- police ---->
-    <link href="https://fonts.googleapis.com/css?family=Merriweather&display=swap" rel="stylesheet">
+    <!--link href="https://fonts.googleapis.com/css?family=Merriweather&display=swap" rel="stylesheet"-->
     <link href="https://fonts.googleapis.com/css?family=Philosopher&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Noticia+Text&display=swap" rel="stylesheet">
+    <!--link href="https://fonts.googleapis.com/css?family=Noticia+Text&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Noto+Serif&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans&display=swap" rel="stylesheet"-->
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
     <!-- -- relier doc html+css ---->
     <link rel="stylesheet" media="screen" href="templates/index.css">
@@ -34,12 +34,12 @@
 </head>
 
 <body>
-<header class="m-5">
+<header>
 <!-- -- barre de navigation ---->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark">
 
     <!-- -- logo ---->
-    <a class="navbar-brand textlogo" href="index.php?page=home"><img class="icon textlogo" src="img/logo2.png" alt="GDreve logo"> <h2>GDrêve</h2></a>
+    <a class="navbar-brand textlogo" href="index.php?page=home"><img class="iconnav textlogo" src="img/logo2.png" alt="GDreve logo"> <h2>GDrêve</h2></a>
 
      <!-- -- bouton de navigation ---->
     <button class="navbar-toggler mr-4" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"

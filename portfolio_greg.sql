@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1
--- Généré le :  sam. 08 fév. 2020 à 11:29
+-- Généré le :  sam. 15 fév. 2020 à 20:12
 -- Version du serveur :  10.4.11-MariaDB
 -- Version de PHP :  7.4.1
 
@@ -46,11 +46,9 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`user_id`, `firstname`, `lastname`, `email`, `fonction`, `entreprise`, `localisation`, `comment`, `date_created`, `image`) VALUES
-(1, 'Bénédicte ', 'Sigg', 'bene@gmail.fr', 'Directrice du département Fran', 'Hanuman Travel', 'Phnom Penh, Cambodge', 'Super moment passé en çà compagnie, il a fait progresser notre équipe, akrun chran!', '2020-01-20 20:18:56', 'img/cambodge.jpg'),
-(2, 'Lorenne', 'Minervini', 'l.minervini@alternative.fr', 'Directrice d\'agence', 'Alternative TT', 'Deauville, France', 'Grégoire travaille dur , pour il est polis et ponctuel et est toujours la pour nous dépanner en cas de besoin. je le recommande vivement!', '2020-01-28 20:45:55', 'img/alternative.jpg'),
-(3, 'Odile', 'Trelly', 'truly@hotmail.fr', 'Directrice de camping', 'Camping de l\'orée de Deauville', 'Vauville, France', 'Nous sommes ravis d\'avoir eu Grégoire parmi nous il nous as été  d\'une aide précieuse, je le recommande chaleureusement !', '2020-01-28 20:54:59', 'img/camping.jpg'),
-(19, 'zF', 'qeyhgcfv', 'exf@tpikmsxf.feuhurtgf', 'qyhrcnf', 'estxrcf', 'eg', 'sr', '2020-01-30 12:55:43', ''),
-(20, 'grégoih', 'De Langej', 'gredegaine@hotmail.fr', 'fgtyuhj', 'ghl', 'le lieu du chêne', 'iohiopmo', '2020-01-30 15:04:45', '');
+(1, 'Bénédicte ', 'Sigg', 'bene@gmail.fr', 'Directrice du département Fran', 'Hanuman Travel', 'Phnom Penh, Cambodge', 'Super moment passé en sa compagnie, il a fait progresser notre équipe, akrun chran!', '2020-01-20 20:18:56', 'img/cambodge.jpg'),
+(2, 'Lorenne', 'Minervini', 'l.minervini@alternative.fr', 'Directrice d\'agence', 'Alternative TT', 'Deauville, France', 'Grégoire travaille dur, pour il est polis et ponctuel. Toujours la pour nous dépanner en cas de besoin. vous en aurez besoin croyez moi!', '2020-01-28 20:45:55', 'img/alternative.jpg'),
+(3, 'Odile', 'Trelly', 'truly@hotmail.fr', 'Directrice de camping', 'Camping de l\'orée de Deauville', 'Vauville, France', 'Nous sommes ravis d\'avoir eu Grégoire parmi nous il nous as été  d\'une aide précieuse, je le recommande chaleureusement!', '2020-01-28 20:54:59', 'img/camping.jpg');
 
 --
 -- Index pour les tables déchargées
@@ -60,8 +58,7 @@ INSERT INTO `users` (`user_id`, `firstname`, `lastname`, `email`, `fonction`, `e
 -- Index pour la table `users`
 --
 ALTER TABLE `users`
-  ADD PRIMARY KEY (`user_id`),
-  ADD UNIQUE KEY `email` (`email`);
+  ADD PRIMARY KEY (`user_id`);
 
 --
 -- AUTO_INCREMENT pour les tables déchargées
@@ -71,7 +68,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT pour la table `users`
 --
 ALTER TABLE `users`
-  MODIFY `user_id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=24;
+  MODIFY `user_id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=59;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

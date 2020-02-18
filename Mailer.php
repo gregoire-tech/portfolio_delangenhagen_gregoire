@@ -39,7 +39,7 @@ class Mailer
 
             // Content
             $mail->isHTML(true);                                  // Set email format to HTML
-            $mail->Subject = 'Nouvelle recommandation de la part de '.$name.' voici son email: '.$emailp. '';
+            $mail->Subject = 'Nouvelle recommandation de la part de '.$name.' voici son email: '.$emailp. '';// Bien penser à changer la variable en une différente de celle de la base de donnée
             $mail->Body    = '<h1>Yessss tu as recu une Nouvelle recommandation de '.$name.' voici son message: <br>'.$commentp.'   </h1>';
 
             $mail->send();
