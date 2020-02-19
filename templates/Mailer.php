@@ -16,7 +16,7 @@ class Mailer
         //Server settings
         $mail->SMTPDebug = SMTP::DEBUG_SERVER;                      // Enable verbose debug output
         $mail->isSMTP();                                            // Send using SMTP            
-        $mail->Host       = 'smtp.sendgrid.net';                    // Set the SMTP server to send through
+        $mail->Host       = 'smtp.gregoiredegaine.fr';                    // Set the SMTP server to send through
         $mail->SMTPAuth   = true;                                   // Enable SMTP authentication
         $mail->Username   = 'apikey';                               // SMTP username
         $mail->Password   = self::API_KEY;                          // SMTP password

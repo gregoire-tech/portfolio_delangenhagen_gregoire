@@ -4,10 +4,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     
+    <!-- -- Onglet ---->
     <title>Portfolio Grégoire</title>
     <link rel="icon" type="image/png" href="img/logo2.png" />
+
     <!-- -- ajuster a la taille d'ecran ---->
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <!-- -- bootstrap jquerry ---->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
@@ -16,21 +19,20 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 
     <!-- -- police ---->
-    <!--link href="https://fonts.googleapis.com/css?family=Merriweather&display=swap" rel="stylesheet"-->
     <link href="https://fonts.googleapis.com/css?family=Philosopher&display=swap" rel="stylesheet">
-    <!--link href="https://fonts.googleapis.com/css?family=Noticia+Text&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Noto+Serif&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans&display=swap" rel="stylesheet"-->
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+
     <!-- -- relier doc html+css ---->
     <link rel="stylesheet" media="screen" href="templates/index.css">
+
+    <!-- Recaptcha -->
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-     <script>
+     
+    <!--<script>
        function onSubmit(token) {
          document.getElementById("demo-form").submit();
        }
-     </script>
+     </script> -->
 </head>
 
 <body>

@@ -1,13 +1,15 @@
 <?php 
-    session_start();
-    spl_autoload_register();
+    //prepare et verifie le formulaire  
+     include("sendForm.php"); 
 
     //crée une instance de la classe
     //$csrfDefender = new CsrfDefender();
 
      // Load Composer's autoloader
      require 'vendor/autoload.php';
- 
+    
+    session_start();
+    spl_autoload_register();
 
      //si le formulaire est soumis
      if (!empty($_POST)){
@@ -18,11 +20,12 @@
          $mailer = new Mailer();
          $mailer->alertForm($name, $emailp, $commentp);
      }
+
+     
     
 ?>
 
-<!-- --prepare et verifie le formulaire  ---->
-<?php  include("templates/sendForm.php"); ?>
+
 
 <!-- --head + header + nav  ---->
 <?php  include("top.php"); ?>
@@ -145,19 +148,19 @@
                        }
                     }
                     //si le formulaire est soumis
-                  //  if (!empty($_POST)){
+                  /*  if (!empty($_POST)){
 
-                    //    //s'assurer que le formulaire est protégé contre les CSRF
-                     //   if ($csrfDefender->validateReceivedToken() === true){
-                     //       echo '<div class="alert alert-success">';
-                      //  echo '<div>' . "Votre Token est valide" . '</div>' ;
-                      //  echo '</div>';
-                      //  }
-                  //  }
+                    //s'assurer que le formulaire est protégé contre les CSRF
+                       if ($csrfDefender->validateReceivedToken() === true){
+                            echo '<div class="alert alert-success">';
+                        echo '<div>' . "Votre Token est valide" . '</div>' ;
+                        echo '</div>';
+                        }
+                    } */
                     ?>
 
             </div> 
-            <!--<div class="g-recaptcha" data-sitekey="6LdmRNgUAAAAAPTLmleVGMXGkhwW_ZHCZSOqIlKA"></div>-->
+            <div class="g-recaptcha" data-sitekey="6LdmRNgUAAAAAPTLmleVGMXGkhwW_ZHCZSOqIlKA"></div>
             <br>
             <button class="btn btn-primary" type="submit">Envoyer</button>
         </form>

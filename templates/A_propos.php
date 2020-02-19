@@ -25,7 +25,7 @@
         </div>
         <!---- image perso ---->
         <div class="col-md-4 align-self-center col-12 p-1 order-1 order-md-2 ">
-            <img src="img/greg.gif" class="w-100" alt="A propos">
+            <img src="img/greg.GIF" class="w-100" alt="A propos">
         </div>
     </div>     
 </section>   

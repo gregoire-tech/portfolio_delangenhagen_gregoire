@@ -119,9 +119,11 @@
         ":localisation" => $localisation, 
         ":comment" => $comment,
     ]);
+    
 
     //renvoie sur la page d'accueil
     header("Location: index.php");
+    
         
     }
 }

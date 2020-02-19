@@ -26,21 +26,21 @@
   .navbar-brand{margin-right: 0rem;}
   .text-carousel{top: 5rem; }
   .containerLogo{padding:0rem; margin:0rem;}
+  .blockcentral{padding: 0px;  margin: 5rem;}
  }
  @media (min-width: 992px){
   .navbar-expand-lg .navbar-nav .nav-link {
       padding-right: 0rem;
       padding-left: 5rem ;}
-  .containerLogo{padding:0rem; margin:0rem;}
  }
  @media screen and (min-width:1370px) {
   .navbar-brand{margin-right: 0rem;}
-   .text-carousel{top: 18em; }
+   .text-carousel{top: 14em; }
  }
  
 /* COMMUN!!! */
 body{font-family: 'Montserrat', sans-serif;
-  padding-top: 5%;
+  padding-top: 3%;
   }
 .blockcentral{padding: 1%;}
 .icon{width: 75px; padding: 0em;margin: 0rem;}
